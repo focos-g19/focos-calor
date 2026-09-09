@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_667d82b879187da95da49e799da940bb {
+                #map_1b14c02b8e0208fbe3f920f594c0a5b9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -64,7 +64,7 @@
                                 font-family:'Arial', monospace;"><b>CONAE - Focos de Calor Diarios Acumulados - Satélite GOES 19</b></h3>
            
     
-	           <h3 align="center" style="font-size:20px;;color: #FFFFFF"><b>Fecha 2026-09-09 Hora:12:00</b></h3>
+	           <h3 align="center" style="font-size:20px;;color: #FFFFFF"><b>Fecha 2026-09-09 Hora:12:10</b></h3>
 	           
     
 	           <h3 align="center" style="font-size:20px"><b> </b></h3>
@@ -104,16 +104,16 @@
     </script>
     
     
-            <div class="folium-map" id="map_667d82b879187da95da49e799da940bb" ></div>
+            <div class="folium-map" id="map_1b14c02b8e0208fbe3f920f594c0a5b9" ></div>
         
 </body>
 <script>
     
     
-            var map_667d82b879187da95da49e799da940bb = L.map(
-                "map_667d82b879187da95da49e799da940bb",
+            var map_1b14c02b8e0208fbe3f920f594c0a5b9 = L.map(
+                "map_1b14c02b8e0208fbe3f920f594c0a5b9",
                 {
-                    center: [-28.540178709677424, -63.130729032258074],
+                    center: [-28.79503026315789, -64.16619763157895],
                     crs: L.CRS.EPSG3857,
                     zoom: 5,
                     zoomControl: true,
@@ -125,736 +125,883 @@
 
         
     
-            var tile_layer_b979a1edca98cf7f2870fe4cf74aca67 = L.tileLayer(
+            var tile_layer_316c4505fdf2d514c43f60a8832289b3 = L.tileLayer(
                 "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG:3857@png/{z}/{x}/{-y}.png",
                 {"attribution": " ", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_b979a1edca98cf7f2870fe4cf74aca67.addTo(map_667d82b879187da95da49e799da940bb);
+            tile_layer_316c4505fdf2d514c43f60a8832289b3.addTo(map_1b14c02b8e0208fbe3f920f594c0a5b9);
         
     
-            var marker_cluster_6264fbe45c41ebb8f1fdb85e25564e44 = L.markerClusterGroup(
+            var marker_cluster_eea11677bed80ad20006d72e96770e18 = L.markerClusterGroup(
                 {}
             );
         
     
-            marker_cluster_6264fbe45c41ebb8f1fdb85e25564e44.addTo(map_667d82b879187da95da49e799da940bb);
+            marker_cluster_eea11677bed80ad20006d72e96770e18.addTo(map_1b14c02b8e0208fbe3f920f594c0a5b9);
         
     
-            var marker_cluster_819ad95247d9a16cf600b9b1cc7725f7 = L.markerClusterGroup(
+            var marker_cluster_d615ac66e9a72facebe77d11a10d649d = L.markerClusterGroup(
                 {}
             );
         
     
-            var circle_marker_8b8fb05f0345b22528c6487492f6c88e = L.circleMarker(
+            var circle_marker_ef0a29abb668582770d4ee34ff1283de = L.circleMarker(
+                [-23.51485, -61.52942],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b6b81eff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_9ca0b7ef2bdc1f52854bc9a7f6dba00d = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_5926a3b1611ea211d419a7890853ccf4 = $(`<div id="html_5926a3b1611ea211d419a7890853ccf4" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-23.51485</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.52942</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>64.75767</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_9ca0b7ef2bdc1f52854bc9a7f6dba00d.setContent(html_5926a3b1611ea211d419a7890853ccf4);
+            
+        
+
+        circle_marker_ef0a29abb668582770d4ee34ff1283de.bindPopup(popup_9ca0b7ef2bdc1f52854bc9a7f6dba00d)
+        ;
+
+        
+    
+    
+            var circle_marker_39138f98d847e535c6e70364b4dce400 = L.circleMarker(
+                [-23.53282, -61.54738],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eab308ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_d6b67fbfcf82c35f8a0bfda8ef6c7192 = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_6b8a4e72d83e93a6b5c68143a493a4ab = $(`<div id="html_6b8a4e72d83e93a6b5c68143a493a4ab" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-23.53282</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.54738</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>86.36587</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_d6b67fbfcf82c35f8a0bfda8ef6c7192.setContent(html_6b8a4e72d83e93a6b5c68143a493a4ab);
+            
+        
+
+        circle_marker_39138f98d847e535c6e70364b4dce400.bindPopup(popup_d6b67fbfcf82c35f8a0bfda8ef6c7192)
+        ;
+
+        
+    
+    
+            var circle_marker_97884ee4db279aa4a09054f6c244ce51 = L.circleMarker(
                 [-23.53282, -61.52942],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ebb008ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f48911ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_a466daeae5955dfd23867b51d9a9af63 = L.popup({"maxWidth": 350});
+        var popup_7768bda58edcb63ad96f443c454ce95a = L.popup({"maxWidth": 350});
 
         
             
-                var html_6c4e1232b4f6825364c52eead6b6092c = $(`<div id="html_6c4e1232b4f6825364c52eead6b6092c" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-23.53282</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.52942</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>102.73145</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_a466daeae5955dfd23867b51d9a9af63.setContent(html_6c4e1232b4f6825364c52eead6b6092c);
+                var html_fd3f71551786d89e1caf1134853c4073 = $(`<div id="html_fd3f71551786d89e1caf1134853c4073" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-23.53282</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.52942</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>140.79498</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_7768bda58edcb63ad96f443c454ce95a.setContent(html_fd3f71551786d89e1caf1134853c4073);
             
         
 
-        circle_marker_8b8fb05f0345b22528c6487492f6c88e.bindPopup(popup_a466daeae5955dfd23867b51d9a9af63)
+        circle_marker_97884ee4db279aa4a09054f6c244ce51.bindPopup(popup_7768bda58edcb63ad96f443c454ce95a)
         ;
 
         
     
     
-            var circle_marker_6830f244a73f134551c53a563188c690 = L.circleMarker(
+            var circle_marker_87bf8b90a4ad9d85d52dc92c5c610959 = L.circleMarker(
+                [-23.55078, -61.54738],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eab308ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_d16494255f6ea73417824e6dc9daec80 = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_2168f15f2674f2730b1d48b5dc0374a3 = $(`<div id="html_2168f15f2674f2730b1d48b5dc0374a3" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-23.55078</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.54738</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>86.36587</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_d16494255f6ea73417824e6dc9daec80.setContent(html_2168f15f2674f2730b1d48b5dc0374a3);
+            
+        
+
+        circle_marker_87bf8b90a4ad9d85d52dc92c5c610959.bindPopup(popup_d16494255f6ea73417824e6dc9daec80)
+        ;
+
+        
+    
+    
+            var circle_marker_96f7eec92b81f38986ea65aca49ac104 = L.circleMarker(
                 [-23.55078, -61.52942],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ebb008ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f97316ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_2bb13fa6a6cd2198abd2746014bcc4ea = L.popup({"maxWidth": 350});
+        var popup_8b86bb85dcd282c6015285d812bc4e68 = L.popup({"maxWidth": 350});
 
         
             
-                var html_516282943ef00641bf3819d927c028a1 = $(`<div id="html_516282943ef00641bf3819d927c028a1" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-23.55078</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.52942</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>102.73145</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_2bb13fa6a6cd2198abd2746014bcc4ea.setContent(html_516282943ef00641bf3819d927c028a1);
+                var html_85c6c4abb771fcdf0c4d24e1cfc361fa = $(`<div id="html_85c6c4abb771fcdf0c4d24e1cfc361fa" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-23.55078</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.52942</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>168.51979</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_8b86bb85dcd282c6015285d812bc4e68.setContent(html_85c6c4abb771fcdf0c4d24e1cfc361fa);
             
         
 
-        circle_marker_6830f244a73f134551c53a563188c690.bindPopup(popup_2bb13fa6a6cd2198abd2746014bcc4ea)
+        circle_marker_96f7eec92b81f38986ea65aca49ac104.bindPopup(popup_8b86bb85dcd282c6015285d812bc4e68)
         ;
 
         
     
     
-            var circle_marker_20b52b1325148693d52c8c2e47b60f5c = L.circleMarker(
+            var circle_marker_cf44ab6a110902a0bfbc67668c6f5580 = L.circleMarker(
                 [-23.60468, -61.47552],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ccb615ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eda90aff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_d920a1e30a2ebf283f729bd29fcbbdd8 = L.popup({"maxWidth": 350});
+        var popup_1e9e341d8c54e35431703fa24255d530 = L.popup({"maxWidth": 350});
 
         
             
-                var html_a7c7cce9fe6e04e98238538852fc6f75 = $(`<div id="html_a7c7cce9fe6e04e98238538852fc6f75" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-23.60468</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.47552</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>84.01847</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_d920a1e30a2ebf283f729bd29fcbbdd8.setContent(html_a7c7cce9fe6e04e98238538852fc6f75);
+                var html_7ff2cb11b042b6ce710c0ad4b12faedb = $(`<div id="html_7ff2cb11b042b6ce710c0ad4b12faedb" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-23.60468</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.47552</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>99.10847</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_1e9e341d8c54e35431703fa24255d530.setContent(html_7ff2cb11b042b6ce710c0ad4b12faedb);
             
         
 
-        circle_marker_20b52b1325148693d52c8c2e47b60f5c.bindPopup(popup_d920a1e30a2ebf283f729bd29fcbbdd8)
+        circle_marker_cf44ab6a110902a0bfbc67668c6f5580.bindPopup(popup_1e9e341d8c54e35431703fa24255d530)
         ;
 
         
     
     
-            var circle_marker_8c1888d20279259f644512ca58de9873 = L.circleMarker(
-                [-24.19757, -61.17009],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#72be3bff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
-        
-    
-        var popup_f73f1f6c46641052222a09d52fe8e407 = L.popup({"maxWidth": 350});
-
-        
-            
-                var html_d9efa731a542a5e14b60c797871f196e = $(`<div id="html_d9efa731a542a5e14b60c797871f196e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.19757</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.17009</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>43.9834</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_f73f1f6c46641052222a09d52fe8e407.setContent(html_d9efa731a542a5e14b60c797871f196e);
-            
-        
-
-        circle_marker_8c1888d20279259f644512ca58de9873.bindPopup(popup_f73f1f6c46641052222a09d52fe8e407)
-        ;
-
-        
-    
-    
-            var circle_marker_458a581cefd754c0f558909e14861a58 = L.circleMarker(
-                [-24.43113, -62.78705],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ebb208ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
-        
-    
-        var popup_418fbeec2492c6ff6d7e1faf8f1b1a29 = L.popup({"maxWidth": 350});
-
-        
-            
-                var html_9389af0f6d4e7af31e5c97e4f90bb1f2 = $(`<div id="html_9389af0f6d4e7af31e5c97e4f90bb1f2" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.43113</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.78705</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>98.8632</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_418fbeec2492c6ff6d7e1faf8f1b1a29.setContent(html_9389af0f6d4e7af31e5c97e4f90bb1f2);
-            
-        
-
-        circle_marker_458a581cefd754c0f558909e14861a58.bindPopup(popup_418fbeec2492c6ff6d7e1faf8f1b1a29)
-        ;
-
-        
-    
-    
-            var circle_marker_540f40a9d2f169bcc016eb4b5406d53f = L.circleMarker(
-                [-24.4491, -62.78705],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3b40bff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
-        
-    
-        var popup_ede33f13b90345b420f831782950f572 = L.popup({"maxWidth": 350});
-
-        
-            
-                var html_f6c6ddcf8a045f5edbee936763743380 = $(`<div id="html_f6c6ddcf8a045f5edbee936763743380" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.4491</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.78705</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>94.60789</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_ede33f13b90345b420f831782950f572.setContent(html_f6c6ddcf8a045f5edbee936763743380);
-            
-        
-
-        circle_marker_540f40a9d2f169bcc016eb4b5406d53f.bindPopup(popup_ede33f13b90345b420f831782950f572)
-        ;
-
-        
-    
-    
-            var circle_marker_afab84937735ccca1c226b644fec068e = L.circleMarker(
+            var circle_marker_d975bcf8b67d21d64cf1751d01fc1c9b = L.circleMarker(
                 [-24.4491, -62.76909],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f76820ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f97316ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_b0df4f9f67b5fa2bef3d4574356b6888 = L.popup({"maxWidth": 350});
+        var popup_250226fac766aca1b44561fc603cd93f = L.popup({"maxWidth": 350});
 
         
             
-                var html_9e32eba74d076bd23a3d212242222646 = $(`<div id="html_9e32eba74d076bd23a3d212242222646" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.4491</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.76909</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>207.8922</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_b0df4f9f67b5fa2bef3d4574356b6888.setContent(html_9e32eba74d076bd23a3d212242222646);
+                var html_87e6a89ef3fd849e364be2ab8e3e4dc6 = $(`<div id="html_87e6a89ef3fd849e364be2ab8e3e4dc6" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.4491</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.76909</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>168.8148</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_250226fac766aca1b44561fc603cd93f.setContent(html_87e6a89ef3fd849e364be2ab8e3e4dc6);
             
         
 
-        circle_marker_afab84937735ccca1c226b644fec068e.bindPopup(popup_b0df4f9f67b5fa2bef3d4574356b6888)
+        circle_marker_d975bcf8b67d21d64cf1751d01fc1c9b.bindPopup(popup_250226fac766aca1b44561fc603cd93f)
         ;
 
         
     
     
-            var circle_marker_b40b72835bbf289743adfcabcee3d74c = L.circleMarker(
+            var circle_marker_09213e15c90ad44b4a8523ec111d26c0 = L.circleMarker(
                 [-24.46706, -62.78705],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d8b50fff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eea20bff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_7ace70153899253eddc9a61cfcc43510 = L.popup({"maxWidth": 350});
+        var popup_58e2285a6d48edc64c7448bffec694f5 = L.popup({"maxWidth": 350});
 
         
             
-                var html_653e83d1df9143229cda3214cba8bb06 = $(`<div id="html_653e83d1df9143229cda3214cba8bb06" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.46706</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.78705</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>89.57009</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_7ace70153899253eddc9a61cfcc43510.setContent(html_653e83d1df9143229cda3214cba8bb06);
+                var html_059a324b2bb5dfaeffa6bd3ab14a4221 = $(`<div id="html_059a324b2bb5dfaeffa6bd3ab14a4221" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.46706</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.78705</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>108.3198</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_58e2285a6d48edc64c7448bffec694f5.setContent(html_059a324b2bb5dfaeffa6bd3ab14a4221);
             
         
 
-        circle_marker_b40b72835bbf289743adfcabcee3d74c.bindPopup(popup_7ace70153899253eddc9a61cfcc43510)
+        circle_marker_09213e15c90ad44b4a8523ec111d26c0.bindPopup(popup_58e2285a6d48edc64c7448bffec694f5)
         ;
 
         
     
     
-            var circle_marker_ad7aa3fb259815d665e9391de3aa0261 = L.circleMarker(
+            var circle_marker_614c9e0f4cdf01471c9e5c9ad242acbe = L.circleMarker(
                 [-24.46706, -62.76909],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f35434ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de3e59ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_7ba5b85c69514592683bbc1eb439102d = L.popup({"maxWidth": 350});
+        var popup_511dff828e6c18a2aa08cbd78c200fe7 = L.popup({"maxWidth": 350});
 
         
             
-                var html_ceefe9b132ffc283d560b19bb222bf50 = $(`<div id="html_ceefe9b132ffc283d560b19bb222bf50" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.46706</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.76909</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>245.67867</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_7ba5b85c69514592683bbc1eb439102d.setContent(html_ceefe9b132ffc283d560b19bb222bf50);
+                var html_fe2855139919d75ca9a46e7fffe43fc5 = $(`<div id="html_fe2855139919d75ca9a46e7fffe43fc5" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.46706</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.76909</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>264.30975</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_511dff828e6c18a2aa08cbd78c200fe7.setContent(html_fe2855139919d75ca9a46e7fffe43fc5);
             
         
 
-        circle_marker_ad7aa3fb259815d665e9391de3aa0261.bindPopup(popup_7ba5b85c69514592683bbc1eb439102d)
+        circle_marker_614c9e0f4cdf01471c9e5c9ad242acbe.bindPopup(popup_511dff828e6c18a2aa08cbd78c200fe7)
         ;
 
         
     
     
-            var circle_marker_e6b61bf56aa068971057327bd15b85a9 = L.circleMarker(
-                [-25.20368, -64.06265],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#50c14aff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+            var circle_marker_3c10e1086221ab8cf8cf2a5f9b31b8ac = L.circleMarker(
+                [-24.46706, -62.75112],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2930eff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_87424e9f7b54f3eb55b75e9fa7a0fffc = L.popup({"maxWidth": 350});
+        var popup_69bf0e625c1a498d13e0f6024a1d2bea = L.popup({"maxWidth": 350});
 
         
             
-                var html_927eef38355fbb3c908d282fb45261b0 = $(`<div id="html_927eef38355fbb3c908d282fb45261b0" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-25.20368</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-64.06265</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>28.72328</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_87424e9f7b54f3eb55b75e9fa7a0fffc.setContent(html_927eef38355fbb3c908d282fb45261b0);
+                var html_cee10b90803e450f135dda8339cb523b = $(`<div id="html_cee10b90803e450f135dda8339cb523b" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-24.46706</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.75112</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>127.31098</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_69bf0e625c1a498d13e0f6024a1d2bea.setContent(html_cee10b90803e450f135dda8339cb523b);
             
         
 
-        circle_marker_e6b61bf56aa068971057327bd15b85a9.bindPopup(popup_87424e9f7b54f3eb55b75e9fa7a0fffc)
+        circle_marker_3c10e1086221ab8cf8cf2a5f9b31b8ac.bindPopup(popup_69bf0e625c1a498d13e0f6024a1d2bea)
         ;
 
         
     
     
-            var circle_marker_844b6f3ac521ec74728aed480965749e = L.circleMarker(
+            var circle_marker_edd33dc8fd8e9fb531745140b24571fa = L.circleMarker(
                 [-25.59893, -64.8891],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bb2eff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8ebc2fff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_4b2814e272e8bc8287f8b7ae0b52a172 = L.popup({"maxWidth": 350});
+        var popup_9fb6b91955ab0483909a406b56e94b36 = L.popup({"maxWidth": 350});
 
         
             
-                var html_afa26a18868ff65edd41b8c656cfa15e = $(`<div id="html_afa26a18868ff65edd41b8c656cfa15e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-25.59893</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-64.8891</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>57.87092</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_4b2814e272e8bc8287f8b7ae0b52a172.setContent(html_afa26a18868ff65edd41b8c656cfa15e);
+                var html_86c64ced6bcee2a87b33aca93aa87bfd = $(`<div id="html_86c64ced6bcee2a87b33aca93aa87bfd" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-25.59893</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-64.8891</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>48.56718</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_9fb6b91955ab0483909a406b56e94b36.setContent(html_86c64ced6bcee2a87b33aca93aa87bfd);
             
         
 
-        circle_marker_844b6f3ac521ec74728aed480965749e.bindPopup(popup_4b2814e272e8bc8287f8b7ae0b52a172)
+        circle_marker_edd33dc8fd8e9fb531745140b24571fa.bindPopup(popup_9fb6b91955ab0483909a406b56e94b36)
         ;
 
         
     
     
-            var circle_marker_82628646fa711d2fd86bf530deba483c = L.circleMarker(
+            var circle_marker_2d83cd448a92a2cce041f5bdb7471b33 = L.circleMarker(
+                [-26.7847, -65.48199],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22c55eff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_d1031ebcb5f11fff760f0ddf50784390 = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_c38d1514a32415fa72be865ebdc12ffc = $(`<div id="html_c38d1514a32415fa72be865ebdc12ffc" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-26.7847</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.48199</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>4.33844</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_d1031ebcb5f11fff760f0ddf50784390.setContent(html_c38d1514a32415fa72be865ebdc12ffc);
+            
+        
+
+        circle_marker_2d83cd448a92a2cce041f5bdb7471b33.bindPopup(popup_d1031ebcb5f11fff760f0ddf50784390)
+        ;
+
+        
+    
+    
+            var circle_marker_cbfca7ba91b40fa28069d841af458a7a = L.circleMarker(
+                [-26.80267, -65.48199],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22c55eff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_da90ea877771a50525eaf2aac1d36bfe = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_60657c3cebfc994001acd8c3ec0becae = $(`<div id="html_60657c3cebfc994001acd8c3ec0becae" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-26.80267</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.48199</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>4.33844</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_da90ea877771a50525eaf2aac1d36bfe.setContent(html_60657c3cebfc994001acd8c3ec0becae);
+            
+        
+
+        circle_marker_cbfca7ba91b40fa28069d841af458a7a.bindPopup(popup_da90ea877771a50525eaf2aac1d36bfe)
+        ;
+
+        
+    
+    
+            var circle_marker_95f02f697af686acc223cf38f3a6b3ae = L.circleMarker(
                 [-27.62912, -58.2955],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5ec044ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7bbd37ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_467a1f6d55df5ec3d8045f1f20862303 = L.popup({"maxWidth": 350});
+        var popup_63a3343082e9383e1f27dc7a700a5923 = L.popup({"maxWidth": 350});
 
         
             
-                var html_792edfcb6347b0aefd073800d999c7c2 = $(`<div id="html_792edfcb6347b0aefd073800d999c7c2" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-27.62912</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-58.2955</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>34.97446</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_467a1f6d55df5ec3d8045f1f20862303.setContent(html_792edfcb6347b0aefd073800d999c7c2);
+                var html_d42844c023d9a75a65f46475b5b3782b = $(`<div id="html_d42844c023d9a75a65f46475b5b3782b" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-27.62912</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-58.2955</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>40.81438</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_63a3343082e9383e1f27dc7a700a5923.setContent(html_d42844c023d9a75a65f46475b5b3782b);
             
         
 
-        circle_marker_82628646fa711d2fd86bf530deba483c.bindPopup(popup_467a1f6d55df5ec3d8045f1f20862303)
+        circle_marker_95f02f697af686acc223cf38f3a6b3ae.bindPopup(popup_63a3343082e9383e1f27dc7a700a5923)
         ;
 
         
     
     
-            var circle_marker_6e041f59589326a23351c6753a389df3 = L.circleMarker(
+            var circle_marker_7d932a18dc09a21e21a368a918c23cdb = L.circleMarker(
                 [-28.06031, -64.06265],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#86bc33ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#65bf41ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_c18e09f764a722c1637a761cf0b8659c = L.popup({"maxWidth": 350});
+        var popup_cf7f476a3730240c9bc9be3b8fc14849 = L.popup({"maxWidth": 350});
 
         
             
-                var html_7f55b125e14f317f41b09a6258554c47 = $(`<div id="html_7f55b125e14f317f41b09a6258554c47" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.06031</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-64.06265</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>52.90208</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_c18e09f764a722c1637a761cf0b8659c.setContent(html_7f55b125e14f317f41b09a6258554c47);
+                var html_365601f1f6fbae6618918f2fa3d3cdf9 = $(`<div id="html_365601f1f6fbae6618918f2fa3d3cdf9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.06031</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-64.06265</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>31.58628</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_cf7f476a3730240c9bc9be3b8fc14849.setContent(html_365601f1f6fbae6618918f2fa3d3cdf9);
             
         
 
-        circle_marker_6e041f59589326a23351c6753a389df3.bindPopup(popup_c18e09f764a722c1637a761cf0b8659c)
+        circle_marker_7d932a18dc09a21e21a368a918c23cdb.bindPopup(popup_cf7f476a3730240c9bc9be3b8fc14849)
         ;
 
         
     
     
-            var circle_marker_a51f00cf710dedd0762d221916e52b67 = L.circleMarker(
+            var circle_marker_9649f454b82180f02ac2799e5bb807d0 = L.circleMarker(
                 [-28.06031, -64.04469],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#86bc33ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#65bf41ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_fe7cfe3034d799662e19715f253281cb = L.popup({"maxWidth": 350});
+        var popup_eafea2415d051dd6169c6c67c5cbf14c = L.popup({"maxWidth": 350});
 
         
             
-                var html_1a29646a8717e4ce197ef896a6cbc2f0 = $(`<div id="html_1a29646a8717e4ce197ef896a6cbc2f0" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.06031</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-64.04469</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>52.90208</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_fe7cfe3034d799662e19715f253281cb.setContent(html_1a29646a8717e4ce197ef896a6cbc2f0);
+                var html_49ef1bad17e99ab0cdd87e41b9a47572 = $(`<div id="html_49ef1bad17e99ab0cdd87e41b9a47572" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.06031</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-64.04469</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>31.58628</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_eafea2415d051dd6169c6c67c5cbf14c.setContent(html_49ef1bad17e99ab0cdd87e41b9a47572);
             
         
 
-        circle_marker_a51f00cf710dedd0762d221916e52b67.bindPopup(popup_fe7cfe3034d799662e19715f253281cb)
+        circle_marker_9649f454b82180f02ac2799e5bb807d0.bindPopup(popup_eafea2415d051dd6169c6c67c5cbf14c)
         ;
 
         
     
     
-            var circle_marker_b8f421afc9bb03e9abcbc58eb5d5b5f4 = L.circleMarker(
-                [-28.09624, -59.44533],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#75be3aff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
-        
-    
-        var popup_167a51cb9f8a5be9ff70b1feb9062b92 = L.popup({"maxWidth": 350});
-
-        
-            
-                var html_bdb33e920c618c9d8a6a7238169e9c43 = $(`<div id="html_bdb33e920c618c9d8a6a7238169e9c43" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.09624</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-59.44533</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>45.38326</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_167a51cb9f8a5be9ff70b1feb9062b92.setContent(html_bdb33e920c618c9d8a6a7238169e9c43);
-            
-        
-
-        circle_marker_b8f421afc9bb03e9abcbc58eb5d5b5f4.bindPopup(popup_167a51cb9f8a5be9ff70b1feb9062b92)
-        ;
-
-        
-    
-    
-            var circle_marker_28520b4610d8b1857268e406def16a99 = L.circleMarker(
-                [-28.09624, -59.42737],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#75be3aff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
-        
-    
-        var popup_a1d54f606010eeb04f3865d1b3b87e90 = L.popup({"maxWidth": 350});
-
-        
-            
-                var html_d8ce0d86d9c4e33517149ed23b27d07d = $(`<div id="html_d8ce0d86d9c4e33517149ed23b27d07d" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.09624</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-59.42737</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>45.38326</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_a1d54f606010eeb04f3865d1b3b87e90.setContent(html_d8ce0d86d9c4e33517149ed23b27d07d);
-            
-        
-
-        circle_marker_28520b4610d8b1857268e406def16a99.bindPopup(popup_a1d54f606010eeb04f3865d1b3b87e90)
-        ;
-
-        
-    
-    
-            var circle_marker_49886b86a8b23942cc206d0936836811 = L.circleMarker(
-                [-28.1142, -59.42737],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#75be3aff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
-        
-    
-        var popup_bac5db1bd10e0f532934eed9e4f0d54d = L.popup({"maxWidth": 350});
-
-        
-            
-                var html_87f271996e5be95e74f377c33d72a124 = $(`<div id="html_87f271996e5be95e74f377c33d72a124" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.1142</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-59.42737</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>45.38326</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_bac5db1bd10e0f532934eed9e4f0d54d.setContent(html_87f271996e5be95e74f377c33d72a124);
-            
-        
-
-        circle_marker_49886b86a8b23942cc206d0936836811.bindPopup(popup_bac5db1bd10e0f532934eed9e4f0d54d)
-        ;
-
-        
-    
-    
-            var circle_marker_c4fb354b2bff46e5680f91eb684aec27 = L.circleMarker(
+            var circle_marker_1669ce40732414965d3ac79c4597b74c = L.circleMarker(
                 [-28.2759, -65.12266],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7e22ceff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7f22cdff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_e76d0fc65b1ea686b145a3455ce18035 = L.popup({"maxWidth": 350});
+        var popup_d03ad04f31bbf8e96c41884fb065fb43 = L.popup({"maxWidth": 350});
 
         
             
-                var html_439b7e8cffbc2bab369c1a1d3b73be8e = $(`<div id="html_439b7e8cffbc2bab369c1a1d3b73be8e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.2759</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.12266</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>366.89621</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_e76d0fc65b1ea686b145a3455ce18035.setContent(html_439b7e8cffbc2bab369c1a1d3b73be8e);
+                var html_ebe1e7cc76eb0522b42d484b6140e884 = $(`<div id="html_ebe1e7cc76eb0522b42d484b6140e884" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.2759</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.12266</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>333.08002</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_d03ad04f31bbf8e96c41884fb065fb43.setContent(html_ebe1e7cc76eb0522b42d484b6140e884);
             
         
 
-        circle_marker_c4fb354b2bff46e5680f91eb684aec27.bindPopup(popup_e76d0fc65b1ea686b145a3455ce18035)
+        circle_marker_1669ce40732414965d3ac79c4597b74c.bindPopup(popup_d03ad04f31bbf8e96c41884fb065fb43)
         ;
 
         
     
     
-            var circle_marker_e7d903c5fc9aef56420bef784082d3bb = L.circleMarker(
+            var circle_marker_26d7cace06bda1e0633510bac69f7c8f = L.circleMarker(
+                [-28.2759, -65.1047],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f58611ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_e2c48353c4e5738a99e5fea3f9dcaa87 = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_36b759af82505627b5c3d56ede2be704 = $(`<div id="html_36b759af82505627b5c3d56ede2be704" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.2759</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.1047</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>144.78305</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_e2c48353c4e5738a99e5fea3f9dcaa87.setContent(html_36b759af82505627b5c3d56ede2be704);
+            
+        
+
+        circle_marker_26d7cace06bda1e0633510bac69f7c8f.bindPopup(popup_e2c48353c4e5738a99e5fea3f9dcaa87)
+        ;
+
+        
+    
+    
+            var circle_marker_e9161aa3870d1d2d512b5c80aed89a1c = L.circleMarker(
                 [-28.29387, -65.12266],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9328b4ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bc3483ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_e2eb9b8326fe03f02215cf442f863b01 = L.popup({"maxWidth": 350});
+        var popup_362c6045fc643c7d23f25c340ece8bd0 = L.popup({"maxWidth": 350});
 
         
             
-                var html_4b76ab983130e8039788709a5671fdf9 = $(`<div id="html_4b76ab983130e8039788709a5671fdf9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.29387</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.12266</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>350.20578</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_e2eb9b8326fe03f02215cf442f863b01.setContent(html_4b76ab983130e8039788709a5671fdf9);
+                var html_03394a8f8215cca10f919ba6e4670e8e = $(`<div id="html_03394a8f8215cca10f919ba6e4670e8e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.29387</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.12266</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>289.11957</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_362c6045fc643c7d23f25c340ece8bd0.setContent(html_03394a8f8215cca10f919ba6e4670e8e);
             
         
 
-        circle_marker_e7d903c5fc9aef56420bef784082d3bb.bindPopup(popup_e2eb9b8326fe03f02215cf442f863b01)
+        circle_marker_e9161aa3870d1d2d512b5c80aed89a1c.bindPopup(popup_362c6045fc643c7d23f25c340ece8bd0)
         ;
 
         
     
     
-            var circle_marker_6f5e0aa914018860b650b45d32ff5f95 = L.circleMarker(
+            var circle_marker_f9bdebfa8f4c1b0d99b348085de02601 = L.circleMarker(
+                [-28.29387, -65.1047],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f96f19ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_c56e9ad456e6da541eb58494240dccbc = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_3a030c4dfd91567e7418ea9bf8910685 = $(`<div id="html_3a030c4dfd91567e7418ea9bf8910685" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.29387</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.1047</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>175.14339</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_c56e9ad456e6da541eb58494240dccbc.setContent(html_3a030c4dfd91567e7418ea9bf8910685);
+            
+        
+
+        circle_marker_f9bdebfa8f4c1b0d99b348085de02601.bindPopup(popup_c56e9ad456e6da541eb58494240dccbc)
+        ;
+
+        
+    
+    
+            var circle_marker_aa69b79ce38285ec3a00e96924e8661a = L.circleMarker(
                 [-28.31183, -65.12266],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b5328bff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f45731ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_31b0f8a98993596d94fcfdc1814f6a2f = L.popup({"maxWidth": 350});
+        var popup_aaa4cd6e9a97e3db0d7a74ac042d5c6f = L.popup({"maxWidth": 350});
 
         
             
-                var html_d1088cfa9a1fcfce566dc77692ac06e7 = $(`<div id="html_d1088cfa9a1fcfce566dc77692ac06e7" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.31183</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.12266</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>323.12891</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_31b0f8a98993596d94fcfdc1814f6a2f.setContent(html_d1088cfa9a1fcfce566dc77692ac06e7);
+                var html_98708d1b3e1112e28d46a88d04f8a7de = $(`<div id="html_98708d1b3e1112e28d46a88d04f8a7de" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.31183</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.12266</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>217.80257</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_aaa4cd6e9a97e3db0d7a74ac042d5c6f.setContent(html_98708d1b3e1112e28d46a88d04f8a7de);
             
         
 
-        circle_marker_6f5e0aa914018860b650b45d32ff5f95.bindPopup(popup_31b0f8a98993596d94fcfdc1814f6a2f)
+        circle_marker_aa69b79ce38285ec3a00e96924e8661a.bindPopup(popup_aaa4cd6e9a97e3db0d7a74ac042d5c6f)
         ;
 
         
     
     
-            var circle_marker_53a423a98dc6b1658341d07b780ef5b6 = L.circleMarker(
-                [-28.94065, -57.05583],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5ac046ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
-        
-    
-        var popup_18802206267a8183c53837a2eb696b94 = L.popup({"maxWidth": 350});
-
-        
-            
-                var html_c6b7b00b07bd3ed1cd003edf2268bacd = $(`<div id="html_c6b7b00b07bd3ed1cd003edf2268bacd" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-28.94065</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-57.05583</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>33.19168</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_18802206267a8183c53837a2eb696b94.setContent(html_c6b7b00b07bd3ed1cd003edf2268bacd);
-            
-        
-
-        circle_marker_53a423a98dc6b1658341d07b780ef5b6.bindPopup(popup_18802206267a8183c53837a2eb696b94)
-        ;
-
-        
-    
-    
-            var circle_marker_073d3f6a9947b9e1982f7c0ad04c96d6 = L.circleMarker(
+            var circle_marker_6268013de08c9b726308d575a6bfeb65 = L.circleMarker(
                 [-29.01252, -65.1047],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f87a14ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f14c3cff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_4d26592820b9b6ee332107946b7d27e2 = L.popup({"maxWidth": 350});
+        var popup_623cfb9040a86d6eb0c39d813e8e5c99 = L.popup({"maxWidth": 350});
 
         
             
-                var html_6d2b9e58999e9a1c427d68ad11a8f26a = $(`<div id="html_6d2b9e58999e9a1c427d68ad11a8f26a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.01252</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.1047</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>177.20921</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_4d26592820b9b6ee332107946b7d27e2.setContent(html_6d2b9e58999e9a1c427d68ad11a8f26a);
+                var html_c763eab6edf3ff134c4b4f7f12f1c3ea = $(`<div id="html_c763eab6edf3ff134c4b4f7f12f1c3ea" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.01252</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.1047</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>237.91293</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_623cfb9040a86d6eb0c39d813e8e5c99.setContent(html_c763eab6edf3ff134c4b4f7f12f1c3ea);
             
         
 
-        circle_marker_073d3f6a9947b9e1982f7c0ad04c96d6.bindPopup(popup_4d26592820b9b6ee332107946b7d27e2)
+        circle_marker_6268013de08c9b726308d575a6bfeb65.bindPopup(popup_623cfb9040a86d6eb0c39d813e8e5c99)
         ;
 
         
     
     
-            var circle_marker_0a13b7d0dd7013a0acecc8af8d87efec = L.circleMarker(
+            var circle_marker_20bfeaf44b5e1943093b0a479891705b = L.circleMarker(
+                [-29.01252, -65.08673],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2930fff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_0d70a837fcff75152e833744e970a01b = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_f0cde8bb98eee1f94ab2bd9109f50dff = $(`<div id="html_f0cde8bb98eee1f94ab2bd9109f50dff" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.01252</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.08673</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>128.3201</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_0d70a837fcff75152e833744e970a01b.setContent(html_f0cde8bb98eee1f94ab2bd9109f50dff);
+            
+        
+
+        circle_marker_20bfeaf44b5e1943093b0a479891705b.bindPopup(popup_0d70a837fcff75152e833744e970a01b)
+        ;
+
+        
+    
+    
+            var circle_marker_547d6523b1f204f9b1d2574ef64d6833 = L.circleMarker(
                 [-29.03048, -65.1047],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f87a14ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f14c3cff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_f3b5bca95685fcef75afc9bad56b206c = L.popup({"maxWidth": 350});
+        var popup_51f8c4ca32f8582d97986d19c16dcbc3 = L.popup({"maxWidth": 350});
 
         
             
-                var html_ef4568a0b244dae941b7c29fe0ac671e = $(`<div id="html_ef4568a0b244dae941b7c29fe0ac671e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.03048</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.1047</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>177.20921</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_f3b5bca95685fcef75afc9bad56b206c.setContent(html_ef4568a0b244dae941b7c29fe0ac671e);
+                var html_7b2eec2e5284eb995e0f01deeb5bb2a1 = $(`<div id="html_7b2eec2e5284eb995e0f01deeb5bb2a1" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.03048</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.1047</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>237.91293</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_51f8c4ca32f8582d97986d19c16dcbc3.setContent(html_7b2eec2e5284eb995e0f01deeb5bb2a1);
             
         
 
-        circle_marker_0a13b7d0dd7013a0acecc8af8d87efec.bindPopup(popup_f3b5bca95685fcef75afc9bad56b206c)
+        circle_marker_547d6523b1f204f9b1d2574ef64d6833.bindPopup(popup_51f8c4ca32f8582d97986d19c16dcbc3)
         ;
 
         
     
     
-            var circle_marker_84dbb6053f3f35f0bf5b24afce40dacf = L.circleMarker(
+            var circle_marker_7daf89b7c6f681334b0dca9438c9b852 = L.circleMarker(
+                [-29.03048, -65.08673],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f48811ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_1646566f9e3d63928f14a61334a66293 = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_cabee0d4240a91be6c7474facddae498 = $(`<div id="html_cabee0d4240a91be6c7474facddae498" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.03048</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-65.08673</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>141.54768</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_1646566f9e3d63928f14a61334a66293.setContent(html_cabee0d4240a91be6c7474facddae498);
+            
+        
+
+        circle_marker_7daf89b7c6f681334b0dca9438c9b852.bindPopup(popup_1646566f9e3d63928f14a61334a66293)
+        ;
+
+        
+    
+    
+            var circle_marker_9dc9f12f612c726a97d75be910cdab0f = L.circleMarker(
+                [-29.42574, -59.91246],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6ebe3dff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_1154e63a31310a96f5aba7e09047d97e = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_9fef1fe2d22c719cb6172d4939e3bce5 = $(`<div id="html_9fef1fe2d22c719cb6172d4939e3bce5" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.42574</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-59.91246</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>35.39061</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_1154e63a31310a96f5aba7e09047d97e.setContent(html_9fef1fe2d22c719cb6172d4939e3bce5);
+            
+        
+
+        circle_marker_9dc9f12f612c726a97d75be910cdab0f.bindPopup(popup_1154e63a31310a96f5aba7e09047d97e)
+        ;
+
+        
+    
+    
+            var circle_marker_5b0b87631538912e95aefa7a1695e60f = L.circleMarker(
+                [-29.44371, -59.91246],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6ebe3dff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_6e1eb58457196106e61ab203e902ce1d = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_38480c44d16741e43c61d7397ec61bf2 = $(`<div id="html_38480c44d16741e43c61d7397ec61bf2" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.44371</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-59.91246</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>35.39061</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_6e1eb58457196106e61ab203e902ce1d.setContent(html_38480c44d16741e43c61d7397ec61bf2);
+            
+        
+
+        circle_marker_5b0b87631538912e95aefa7a1695e60f.bindPopup(popup_6e1eb58457196106e61ab203e902ce1d)
+        ;
+
+        
+    
+    
+            var circle_marker_fa140528873fdffcd5c923933d3ae278 = L.circleMarker(
+                [-29.4976, -61.67315],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#84bc34ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_b8121b376ee7036b3d0159f2ca9cf541 = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_376dc0a60aa2c86a47e6f20790a88bf5 = $(`<div id="html_376dc0a60aa2c86a47e6f20790a88bf5" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.4976</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.67315</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>44.36818</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_b8121b376ee7036b3d0159f2ca9cf541.setContent(html_376dc0a60aa2c86a47e6f20790a88bf5);
+            
+        
+
+        circle_marker_fa140528873fdffcd5c923933d3ae278.bindPopup(popup_b8121b376ee7036b3d0159f2ca9cf541)
+        ;
+
+        
+    
+    
+            var circle_marker_70f026e7c25ace9563f6482306c21614 = L.circleMarker(
+                [-29.51557, -61.67315],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#84bc34ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_70709b60c09c215c32bc3e39985e2856 = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_55a7aef5436232f3f5982188b13b2b46 = $(`<div id="html_55a7aef5436232f3f5982188b13b2b46" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.51557</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.67315</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>44.36818</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_70709b60c09c215c32bc3e39985e2856.setContent(html_55a7aef5436232f3f5982188b13b2b46);
+            
+        
+
+        circle_marker_70f026e7c25ace9563f6482306c21614.bindPopup(popup_70709b60c09c215c32bc3e39985e2856)
+        ;
+
+        
+    
+    
+            var circle_marker_571aa6058c48f994e53643debe54a075 = L.circleMarker(
                 [-29.87489, -61.65518],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8fbb2fff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4b718ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_1c435213052dd146f248f86c861a073d = L.popup({"maxWidth": 350});
+        var popup_5d789f04573538659b0653b486c71d44 = L.popup({"maxWidth": 350});
 
         
             
-                var html_d8abde4e288097c0b9e0c49dfbfcec0e = $(`<div id="html_d8abde4e288097c0b9e0c49dfbfcec0e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.87489</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.65518</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>56.69205</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_1c435213052dd146f248f86c861a073d.setContent(html_d8abde4e288097c0b9e0c49dfbfcec0e);
+                var html_47551388837e19ac9f891089f61e6ee6 = $(`<div id="html_47551388837e19ac9f891089f61e6ee6" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-29.87489</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-61.65518</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>70.84682</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_5d789f04573538659b0653b486c71d44.setContent(html_47551388837e19ac9f891089f61e6ee6);
             
         
 
-        circle_marker_84dbb6053f3f35f0bf5b24afce40dacf.bindPopup(popup_1c435213052dd146f248f86c861a073d)
+        circle_marker_571aa6058c48f994e53643debe54a075.bindPopup(popup_5d789f04573538659b0653b486c71d44)
         ;
 
         
     
     
-            var circle_marker_dd1c434fedd205dcb291461b704dbb09 = L.circleMarker(
-                [-30.14439, -59.24771],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63bf42ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+            var circle_marker_708995bb63b9bc52592a087d32d61943 = L.circleMarker(
+                [-31.67152, -69.21896],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#29c55bff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_3bafd3b7b6eeaff0db9c7b0d1ee0f022 = L.popup({"maxWidth": 350});
+        var popup_373161a8f50de5b7e1de922a2c54c22f = L.popup({"maxWidth": 350});
 
         
             
-                var html_53f0611532276efb89a0847f9b0ef50d = $(`<div id="html_53f0611532276efb89a0847f9b0ef50d" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-30.14439</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-59.24771</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>37.06388</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_3bafd3b7b6eeaff0db9c7b0d1ee0f022.setContent(html_53f0611532276efb89a0847f9b0ef50d);
+                var html_b081685d258110df17725ff0b1be69d6 = $(`<div id="html_b081685d258110df17725ff0b1be69d6" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-31.67152</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-69.21896</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>7.20794</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_373161a8f50de5b7e1de922a2c54c22f.setContent(html_b081685d258110df17725ff0b1be69d6);
             
         
 
-        circle_marker_dd1c434fedd205dcb291461b704dbb09.bindPopup(popup_3bafd3b7b6eeaff0db9c7b0d1ee0f022)
+        circle_marker_708995bb63b9bc52592a087d32d61943.bindPopup(popup_373161a8f50de5b7e1de922a2c54c22f)
         ;
 
         
     
     
-            var circle_marker_79c593597972d6eb962ee31ec612f6dd = L.circleMarker(
-                [-30.14439, -59.22974],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63bf42ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+            var circle_marker_8cbcace318204e08f33e2943ec5e3076 = L.circleMarker(
+                [-31.68948, -69.21896],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#29c55bff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_02eacb33b4f75765f6adb84ed35586eb = L.popup({"maxWidth": 350});
+        var popup_3661041f12fcc5d17d0a27ab4d985359 = L.popup({"maxWidth": 350});
 
         
             
-                var html_1206f57288abe563b4ffc0fa99810568 = $(`<div id="html_1206f57288abe563b4ffc0fa99810568" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-30.14439</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-59.22974</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>37.06388</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_02eacb33b4f75765f6adb84ed35586eb.setContent(html_1206f57288abe563b4ffc0fa99810568);
+                var html_125e0aedcc354576124f8efc3a813d43 = $(`<div id="html_125e0aedcc354576124f8efc3a813d43" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-31.68948</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-69.21896</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>7.20794</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_3661041f12fcc5d17d0a27ab4d985359.setContent(html_125e0aedcc354576124f8efc3a813d43);
             
         
 
-        circle_marker_79c593597972d6eb962ee31ec612f6dd.bindPopup(popup_02eacb33b4f75765f6adb84ed35586eb)
+        circle_marker_8cbcace318204e08f33e2943ec5e3076.bindPopup(popup_3661041f12fcc5d17d0a27ab4d985359)
         ;
 
         
     
     
-            var circle_marker_192ae6e25c4e8ec8f596a6d901b6abe5 = L.circleMarker(
-                [-30.16235, -59.22974],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63bf42ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+            var circle_marker_facdcf4a16151ad9dd3df9ef1faa50c8 = L.circleMarker(
+                [-33.46814, -62.40976],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2fc458ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_75e82abc7c05390f963d7360dfc17647 = L.popup({"maxWidth": 350});
+        var popup_db6b5c022e981b5f311f11d3cbc6b3d4 = L.popup({"maxWidth": 350});
 
         
             
-                var html_c43aaea8278379477259e3d3bcc64a7e = $(`<div id="html_c43aaea8278379477259e3d3bcc64a7e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-30.16235</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-59.22974</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>37.06388</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_75e82abc7c05390f963d7360dfc17647.setContent(html_c43aaea8278379477259e3d3bcc64a7e);
+                var html_933e46e95c37851ee8b8f69896443734 = $(`<div id="html_933e46e95c37851ee8b8f69896443734" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-33.46814</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.40976</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>9.44004</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_db6b5c022e981b5f311f11d3cbc6b3d4.setContent(html_933e46e95c37851ee8b8f69896443734);
             
         
 
-        circle_marker_192ae6e25c4e8ec8f596a6d901b6abe5.bindPopup(popup_75e82abc7c05390f963d7360dfc17647)
+        circle_marker_facdcf4a16151ad9dd3df9ef1faa50c8.bindPopup(popup_db6b5c022e981b5f311f11d3cbc6b3d4)
         ;
 
         
     
     
-            var circle_marker_735ebe2defcd52128bc434af847da41e = L.circleMarker(
+            var circle_marker_c10253221bd79dd5daffd730c6c1367e = L.circleMarker(
+                [-33.46814, -62.3918],
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2fc458ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
+        
+    
+        var popup_45cc46eaa02517d402465767bc89139b = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_99e5ca603d113112aee10f4d84c3e76a = $(`<div id="html_99e5ca603d113112aee10f4d84c3e76a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-33.46814</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-62.3918</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>9.44004</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_45cc46eaa02517d402465767bc89139b.setContent(html_99e5ca603d113112aee10f4d84c3e76a);
+            
+        
+
+        circle_marker_c10253221bd79dd5daffd730c6c1367e.bindPopup(popup_45cc46eaa02517d402465767bc89139b)
+        ;
+
+        
+    
+    
+            var circle_marker_5daf84ff753279e97509c9dc300a5d89 = L.circleMarker(
                 [-39.1275, -70.45863],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22c55eff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ec459ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_e000b01708726b8d73719d02c312b744 = L.popup({"maxWidth": 350});
+        var popup_1cf4cb4c11df96513df22504dde3c7ff = L.popup({"maxWidth": 350});
 
         
             
-                var html_b706e6bf94be5247c34edeeb5bba8226 = $(`<div id="html_b706e6bf94be5247c34edeeb5bba8226" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-39.1275</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-70.45863</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>8.30115</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_e000b01708726b8d73719d02c312b744.setContent(html_b706e6bf94be5247c34edeeb5bba8226);
+                var html_ccd55223157227858dab03e987da7e4a = $(`<div id="html_ccd55223157227858dab03e987da7e4a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-39.1275</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-70.45863</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>8.89534</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_1cf4cb4c11df96513df22504dde3c7ff.setContent(html_ccd55223157227858dab03e987da7e4a);
             
         
 
-        circle_marker_735ebe2defcd52128bc434af847da41e.bindPopup(popup_e000b01708726b8d73719d02c312b744)
+        circle_marker_5daf84ff753279e97509c9dc300a5d89.bindPopup(popup_1cf4cb4c11df96513df22504dde3c7ff)
         ;
 
         
     
     
-            var circle_marker_755588771e16e23552cf532d783107aa = L.circleMarker(
+            var circle_marker_075bc49bd2540dace475e98f1419a2a9 = L.circleMarker(
                 [-39.1275, -70.44066],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22c55eff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ec459ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_f1fc4b40ae5fb97c1426379bc5f2c40c = L.popup({"maxWidth": 350});
+        var popup_89d2f8c2aa6419b8515ee7e52d360eb9 = L.popup({"maxWidth": 350});
 
         
             
-                var html_1865607ccb10f2890181d31461112619 = $(`<div id="html_1865607ccb10f2890181d31461112619" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-39.1275</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-70.44066</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>8.30115</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_f1fc4b40ae5fb97c1426379bc5f2c40c.setContent(html_1865607ccb10f2890181d31461112619);
+                var html_c34a9c09096aeab674e5594160f1deea = $(`<div id="html_c34a9c09096aeab674e5594160f1deea" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-39.1275</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-70.44066</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>8.89534</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_89d2f8c2aa6419b8515ee7e52d360eb9.setContent(html_c34a9c09096aeab674e5594160f1deea);
             
         
 
-        circle_marker_755588771e16e23552cf532d783107aa.bindPopup(popup_f1fc4b40ae5fb97c1426379bc5f2c40c)
+        circle_marker_075bc49bd2540dace475e98f1419a2a9.bindPopup(popup_89d2f8c2aa6419b8515ee7e52d360eb9)
         ;
 
         
     
     
-            var circle_marker_e75abbe954c02f8a19f548005e6a105e = L.circleMarker(
+            var circle_marker_44fff20313253c465d04f78b26ddf467 = L.circleMarker(
                 [-39.14547, -70.45863],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22c55eff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ec459ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_3b94c3644991b6910c4bac3881ca0ebb = L.popup({"maxWidth": 350});
+        var popup_0342315fceb90fe24a80162edbf9dca0 = L.popup({"maxWidth": 350});
 
         
             
-                var html_2004f69737557519a527cac1ef0c08c7 = $(`<div id="html_2004f69737557519a527cac1ef0c08c7" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-39.14547</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-70.45863</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>8.30115</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_3b94c3644991b6910c4bac3881ca0ebb.setContent(html_2004f69737557519a527cac1ef0c08c7);
+                var html_6ddc326e2522f734e5aeb23f6de4ad10 = $(`<div id="html_6ddc326e2522f734e5aeb23f6de4ad10" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-39.14547</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-70.45863</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>8.89534</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_0342315fceb90fe24a80162edbf9dca0.setContent(html_6ddc326e2522f734e5aeb23f6de4ad10);
             
         
 
-        circle_marker_e75abbe954c02f8a19f548005e6a105e.bindPopup(popup_3b94c3644991b6910c4bac3881ca0ebb)
+        circle_marker_44fff20313253c465d04f78b26ddf467.bindPopup(popup_0342315fceb90fe24a80162edbf9dca0)
         ;
 
         
     
     
-            var circle_marker_d31f1c153607b868aa9c659c248459b2 = L.circleMarker(
+            var circle_marker_73a13d7d7b6ff7279fe84be5b57205f3 = L.circleMarker(
                 [-39.14547, -70.44066],
-                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22c55eff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
-            ).addTo(marker_cluster_819ad95247d9a16cf600b9b1cc7725f7);
+                {"bubblingMouseEvents": true, "color": "#1f2937", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ec459ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_d615ac66e9a72facebe77d11a10d649d);
         
     
-        var popup_cd22e9b2237fdea5c4d6de1c31ec4fd4 = L.popup({"maxWidth": 350});
+        var popup_c0189dd9f60af68ce0950b6580b177a4 = L.popup({"maxWidth": 350});
 
         
             
-                var html_c556b997b1c7740aac7ed28297a06465 = $(`<div id="html_c556b997b1c7740aac7ed28297a06465" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-39.14547</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-70.44066</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>8.30115</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>0</td></tr>       </table>     </div>     </div>`)[0];
-                popup_cd22e9b2237fdea5c4d6de1c31ec4fd4.setContent(html_c556b997b1c7740aac7ed28297a06465);
+                var html_85fd1f8484b233d79575a53457de4db9 = $(`<div id="html_85fd1f8484b233d79575a53457de4db9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; font-size:12px;">       <b>Foco GOES-19</b>       <table style="border-collapse:collapse;margin-top:6px;">         <tr><th style='text-align:left;padding-right:8px'>lat</th><td>-39.14547</td></tr><tr><th style='text-align:left;padding-right:8px'>lon</th><td>-70.44066</td></tr><tr><th style='text-align:left;padding-right:8px'>Power</th><td>8.89534</td></tr><tr><th style='text-align:left;padding-right:8px'>fecha</th><td>2026-09-09</td></tr><tr><th style='text-align:left;padding-right:8px'>hora</th><td>12</td></tr><tr><th style='text-align:left;padding-right:8px'>minutos</th><td>10</td></tr>       </table>     </div>     </div>`)[0];
+                popup_c0189dd9f60af68ce0950b6580b177a4.setContent(html_85fd1f8484b233d79575a53457de4db9);
             
         
 
-        circle_marker_d31f1c153607b868aa9c659c248459b2.bindPopup(popup_cd22e9b2237fdea5c4d6de1c31ec4fd4)
+        circle_marker_73a13d7d7b6ff7279fe84be5b57205f3.bindPopup(popup_c0189dd9f60af68ce0950b6580b177a4)
         ;
 
         
     
     
-            marker_cluster_819ad95247d9a16cf600b9b1cc7725f7.addTo(map_667d82b879187da95da49e799da940bb);
+            marker_cluster_d615ac66e9a72facebe77d11a10d649d.addTo(map_1b14c02b8e0208fbe3f920f594c0a5b9);
         
     
-            var layer_control_11d4d33515fc30757b68d6bec94f4692_layers = {
+            var layer_control_87e69f05e39b222891acebb318f85f03_layers = {
                 base_layers : {
-                    "IGN" : tile_layer_b979a1edca98cf7f2870fe4cf74aca67,
+                    "IGN" : tile_layer_316c4505fdf2d514c43f60a8832289b3,
                 },
                 overlays :  {
-                    "macro_element_6264fbe45c41ebb8f1fdb85e25564e44" : marker_cluster_6264fbe45c41ebb8f1fdb85e25564e44,
-                    "Focos de Calor" : marker_cluster_819ad95247d9a16cf600b9b1cc7725f7,
+                    "macro_element_eea11677bed80ad20006d72e96770e18" : marker_cluster_eea11677bed80ad20006d72e96770e18,
+                    "Focos de Calor" : marker_cluster_d615ac66e9a72facebe77d11a10d649d,
                 },
             };
-            let layer_control_11d4d33515fc30757b68d6bec94f4692 = L.control.layers(
-                layer_control_11d4d33515fc30757b68d6bec94f4692_layers.base_layers,
-                layer_control_11d4d33515fc30757b68d6bec94f4692_layers.overlays,
+            let layer_control_87e69f05e39b222891acebb318f85f03 = L.control.layers(
+                layer_control_87e69f05e39b222891acebb318f85f03_layers.base_layers,
+                layer_control_87e69f05e39b222891acebb318f85f03_layers.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_667d82b879187da95da49e799da940bb);
+            ).addTo(map_1b14c02b8e0208fbe3f920f594c0a5b9);
 
         
     
-    var color_map_8d9a12617048ffbc14a611d17253e30b = {};
+    var color_map_063043ef9e6b77953565995b9ecf5bde = {};
 
     
-    color_map_8d9a12617048ffbc14a611d17253e30b.color = d3.scale.threshold()
-              .domain([8.0, 8.719438877755511, 9.438877755511022, 10.158316633266534, 10.877755511022045, 11.597194388777556, 12.316633266533067, 13.036072144288578, 13.75551102204409, 14.474949899799599, 15.19438877755511, 15.913827655310621, 16.633266533066134, 17.352705410821642, 18.072144288577157, 18.791583166332664, 19.51102204408818, 20.230460921843687, 20.949899799599198, 21.66933867735471, 22.38877755511022, 23.10821643286573, 23.827655310621243, 24.547094188376754, 25.266533066132265, 25.985971943887776, 26.705410821643287, 27.4248496993988, 28.14428857715431, 28.86372745490982, 29.583166332665332, 30.302605210420843, 31.022044088176354, 31.741482965931862, 32.46092184368737, 33.18036072144288, 33.899799599198396, 34.61923847695391, 35.33867735470942, 36.058116232464926, 36.77755511022044, 37.496993987975955, 38.21643286573146, 38.93587174348697, 39.655310621242485, 40.37474949899799, 41.09418837675351, 41.813627254509015, 42.53306613226453, 43.25250501002004, 43.97194388777555, 44.69138276553106, 45.410821643286575, 46.13026052104208, 46.8496993987976, 47.569138276553105, 48.28857715430862, 49.00801603206413, 49.72745490981964, 50.44689378757515, 51.166332665330664, 51.88577154308617, 52.605210420841686, 53.324649298597194, 54.04408817635271, 54.763527054108216, 55.482965931863724, 56.20240480961924, 56.921843687374746, 57.64128256513026, 58.36072144288577, 59.08016032064128, 59.79959919839679, 60.519038076152306, 61.23847695390781, 61.95791583166333, 62.677354709418836, 63.39679358717435, 64.11623246492985, 64.83567134268537, 65.55511022044088, 66.27454909819639, 66.99398797595191, 67.71342685370742, 68.43286573146293, 69.15230460921845, 69.87174348697394, 70.59118236472946, 71.31062124248497, 72.03006012024048, 72.74949899799599, 73.46893787575151, 74.18837675350701, 74.90781563126252, 75.62725450901803, 76.34669338677355, 77.06613226452906, 77.78557114228457, 78.50501002004007, 79.2244488977956, 79.9438877755511, 80.66332665330661, 81.38276553106212, 82.10220440881764, 82.82164328657315, 83.54108216432866, 84.26052104208416, 84.97995991983969, 85.6993987975952, 86.4188376753507, 87.13827655310621, 87.85771543086172, 88.57715430861724, 89.29659318637275, 90.01603206412825, 90.73547094188376, 91.45490981963928, 92.17434869739479, 92.8937875751503, 93.6132264529058, 94.33266533066133, 95.05210420841684, 95.77154308617234, 96.49098196392785, 97.21042084168337, 97.92985971943888, 98.64929859719439, 99.3687374749499, 100.08817635270542, 100.80761523046093, 101.52705410821643, 102.24649298597194, 102.96593186372745, 103.68537074148297, 104.40480961923848, 105.12424849699399, 105.84368737474949, 106.56312625250501, 107.28256513026052, 108.00200400801603, 108.72144288577154, 109.44088176352706, 110.16032064128257, 110.87975951903807, 111.59919839679358, 112.3186372745491, 113.03807615230461, 113.75751503006012, 114.47695390781563, 115.19639278557115, 115.91583166332666, 116.63527054108216, 117.35470941883767, 118.07414829659318, 118.7935871743487, 119.51302605210421, 120.23246492985972, 120.95190380761522, 121.67134268537075, 122.39078156312625, 123.11022044088176, 123.82965931863727, 124.54909819639279, 125.2685370741483, 125.9879759519038, 126.70741482965931, 127.42685370741484, 128.14629258517033, 128.86573146292585, 129.58517034068137, 130.3046092184369, 131.0240480961924, 131.74348697394788, 132.4629258517034, 133.18236472945893, 133.90180360721445, 134.62124248496994, 135.34068136272543, 136.06012024048096, 136.77955911823648, 137.49899799599197, 138.2184368737475, 138.93787575150301, 139.6573146292585, 140.37675350701403, 141.09619238476955, 141.81563126252505, 142.53507014028057, 143.25450901803606, 143.97394789579158, 144.6933867735471, 145.4128256513026, 146.13226452905812, 146.85170340681364, 147.57114228456913, 148.29058116232466, 149.01002004008015, 149.72945891783567, 150.4488977955912, 151.1683366733467, 151.8877755511022, 152.6072144288577, 153.32665330661322, 154.04609218436875, 154.76553106212424, 155.48496993987976, 156.20440881763528, 156.92384769539078, 157.6432865731463, 158.3627254509018, 159.0821643286573, 159.80160320641284, 160.52104208416833, 161.24048096192385, 161.95991983967937, 162.67935871743487, 163.3987975951904, 164.11823647294588, 164.8376753507014, 165.55711422845692, 166.27655310621242, 166.99599198396794, 167.71543086172343, 168.43486973947896, 169.15430861723448, 169.87374749498997, 170.5931863727455, 171.31262525050101, 172.0320641282565, 172.75150300601203, 173.47094188376752, 174.19038076152304, 174.90981963927857, 175.62925851703406, 176.34869739478958, 177.0681362725451, 177.7875751503006, 178.50701402805612, 179.2264529058116, 179.94589178356713, 180.66533066132266, 181.38476953907815, 182.10420841683367, 182.82364729458916, 183.5430861723447, 184.2625250501002, 184.9819639278557, 185.70140280561122, 186.42084168336675, 187.14028056112224, 187.85971943887776, 188.57915831663325, 189.29859719438878, 190.0180360721443, 190.7374749498998, 191.4569138276553, 192.17635270541084, 192.89579158316633, 193.61523046092185, 194.33466933867734, 195.05410821643287, 195.7735470941884, 196.49298597194388, 197.2124248496994, 197.9318637274549, 198.65130260521042, 199.37074148296594, 200.09018036072143, 200.80961923847696, 201.52905811623248, 202.24849699398797, 202.9679358717435, 203.68737474949899, 204.4068136272545, 205.12625250501003, 205.84569138276552, 206.56513026052104, 207.28456913827657, 208.00400801603206, 208.72344689378758, 209.44288577154308, 210.1623246492986, 210.88176352705412, 211.6012024048096, 212.32064128256513, 213.04008016032063, 213.75951903807615, 214.47895791583167, 215.19839679358716, 215.9178356713427, 216.6372745490982, 217.3567134268537, 218.07615230460922, 218.79559118236472, 219.51503006012024, 220.23446893787576, 220.95390781563125, 221.67334669338678, 222.3927855711423, 223.1122244488978, 223.8316633266533, 224.5511022044088, 225.27054108216433, 225.98997995991985, 226.70941883767534, 227.42885771543087, 228.14829659318636, 228.86773547094188, 229.5871743486974, 230.3066132264529, 231.02605210420842, 231.74549098196394, 232.46492985971943, 233.18436873747495, 233.90380761523045, 234.62324649298597, 235.3426853707415, 236.06212424849699, 236.7815631262525, 237.50100200400803, 238.22044088176352, 238.93987975951904, 239.65931863727454, 240.37875751503006, 241.09819639278558, 241.81763527054107, 242.5370741482966, 243.2565130260521, 243.9759519038076, 244.69539078156313, 245.41482965931863, 246.13426853707415, 246.85370741482967, 247.57314629258516, 248.2925851703407, 249.01202404809618, 249.7314629258517, 250.45090180360722, 251.17034068136272, 251.88977955911824, 252.60921843687376, 253.32865731462925, 254.04809619238478, 254.76753507014027, 255.4869739478958, 256.20641282565134, 256.9258517034068, 257.6452905811623, 258.36472945891785, 259.0841683366733, 259.8036072144289, 260.52304609218436, 261.2424849699399, 261.9619238476954, 262.68136272545087, 263.40080160320645, 264.1202404809619, 264.83967935871743, 265.55911823647295, 266.2785571142285, 266.99799599198394, 267.71743486973946, 268.436873747495, 269.1563126252505, 269.87575150300603, 270.59519038076155, 271.314629258517, 272.03406813627254, 272.75350701402806, 273.4729458917836, 274.1923847695391, 274.91182364729457, 275.6312625250501, 276.3507014028056, 277.07014028056113, 277.78957915831666, 278.5090180360721, 279.22845691382764, 279.94789579158316, 280.6673346693387, 281.3867735470942, 282.1062124248497, 282.8256513026052, 283.5450901803607, 284.26452905811624, 284.98396793587176, 285.7034068136273, 286.42284569138275, 287.14228456913827, 287.8617234468938, 288.5811623246493, 289.30060120240483, 290.0200400801603, 290.7394789579158, 291.45891783567134, 292.17835671342687, 292.8977955911824, 293.61723446893785, 294.3366733466934, 295.0561122244489, 295.7755511022044, 296.49498997995994, 297.2144288577154, 297.9338677354709, 298.65330661322645, 299.37274549098197, 300.0921843687375, 300.811623246493, 301.5310621242485, 302.250501002004, 302.9699398797595, 303.68937875751504, 304.40881763527057, 305.12825651302603, 305.84769539078155, 306.5671342685371, 307.2865731462926, 308.0060120240481, 308.7254509018036, 309.4448897795591, 310.1643286573146, 310.88376753507015, 311.60320641282567, 312.32264529058114, 313.04208416833666, 313.7615230460922, 314.4809619238477, 315.2004008016032, 315.91983967935874, 316.6392785571142, 317.35871743486973, 318.07815631262525, 318.7975951903808, 319.5170340681363, 320.23647294589176, 320.9559118236473, 321.6753507014028, 322.3947895791583, 323.11422845691385, 323.8336673346693, 324.55310621242484, 325.27254509018036, 325.9919839679359, 326.7114228456914, 327.43086172344687, 328.1503006012024, 328.8697394789579, 329.58917835671343, 330.30861723446895, 331.0280561122245, 331.74749498997994, 332.46693386773546, 333.186372745491, 333.9058116232465, 334.62525050100203, 335.3446893787575, 336.064128256513, 336.78356713426854, 337.50300601202406, 338.2224448897796, 338.94188376753505, 339.66132264529057, 340.3807615230461, 341.1002004008016, 341.81963927855713, 342.5390781563126, 343.2585170340681, 343.97795591182364, 344.69739478957916, 345.4168336673347, 346.1362725450902, 346.8557114228457, 347.5751503006012, 348.2945891783567, 349.01402805611224, 349.73346693386776, 350.4529058116232, 351.17234468937875, 351.89178356713427, 352.6112224448898, 353.3306613226453, 354.0501002004008, 354.7695390781563, 355.4889779559118, 356.20841683366734, 356.92785571142286, 357.64729458917833, 358.36673346693385, 359.0861723446894, 359.8056112224449, 360.5250501002004, 361.24448897795594, 361.9639278557114, 362.6833667334669, 363.40280561122245, 364.12224448897797, 364.8416833667335, 365.56112224448896, 366.2805611222445, 367.0])
+    color_map_063043ef9e6b77953565995b9ecf5bde.color = d3.scale.threshold()
+              .domain([4.0, 4.661322645290581, 5.322645290581162, 5.9839679358717435, 6.645290581162325, 7.306613226452906, 7.967935871743487, 8.629258517034067, 9.29058116232465, 9.951903807615231, 10.613226452905812, 11.274549098196392, 11.935871743486974, 12.597194388777556, 13.258517034068136, 13.919839679358718, 14.581162324649299, 15.24248496993988, 15.90380761523046, 16.565130260521045, 17.226452905811623, 17.887775551102205, 18.549098196392784, 19.210420841683366, 19.871743486973948, 20.53306613226453, 21.194388777555112, 21.85571142284569, 22.517034068136272, 23.178356713426854, 23.839679358717436, 24.501002004008015, 25.162324649298597, 25.82364729458918, 26.48496993987976, 27.14629258517034, 27.80761523046092, 28.468937875751504, 29.130260521042086, 29.791583166332664, 30.452905811623246, 31.11422845691383, 31.77555110220441, 32.436873747494985, 33.09819639278557, 33.75951903807615, 34.42084168336673, 35.08216432865731, 35.743486973947896, 36.40480961923848, 37.06613226452906, 37.72745490981964, 38.388777555110224, 39.0501002004008, 39.71142284569138, 40.37274549098196, 41.034068136272545, 41.69539078156313, 42.35671342685371, 43.01803607214429, 43.67935871743487, 44.34068136272545, 45.00200400801603, 45.66332665330661, 46.324649298597194, 46.985971943887776, 47.64729458917836, 48.30861723446894, 48.96993987975952, 49.6312625250501, 50.29258517034068, 50.95390781563126, 51.61523046092184, 52.276553106212425, 52.93787575150301, 53.59919839679359, 54.26052104208417, 54.921843687374746, 55.58316633266533, 56.24448897795591, 56.90581162324649, 57.567134268537075, 58.22845691382766, 58.88977955911824, 59.55110220440882, 60.212424849699396, 60.87374749498998, 61.53507014028056, 62.19639278557114, 62.857715430861724, 63.519038076152306, 64.1803607214429, 64.84168336673346, 65.50300601202404, 66.16432865731463, 66.82565130260521, 67.48697394789579, 68.14829659318637, 68.80961923847696, 69.47094188376754, 70.13226452905812, 70.7935871743487, 71.45490981963928, 72.11623246492987, 72.77755511022045, 73.43887775551102, 74.1002004008016, 74.76152304609218, 75.42284569138276, 76.08416833667334, 76.74549098196393, 77.40681362725451, 78.06813627254509, 78.72945891783567, 79.39078156312625, 80.05210420841684, 80.71342685370742, 81.374749498998, 82.03607214428858, 82.69739478957916, 83.35871743486975, 84.02004008016031, 84.6813627254509, 85.34268537074148, 86.00400801603206, 86.66533066132264, 87.32665330661322, 87.9879759519038, 88.64929859719439, 89.31062124248497, 89.97194388777555, 90.63326653306613, 91.29458917835672, 91.9559118236473, 92.61723446893788, 93.27855711422846, 93.93987975951904, 94.60120240480961, 95.2625250501002, 95.92384769539078, 96.58517034068136, 97.24649298597194, 97.90781563126252, 98.5691382765531, 99.23046092184369, 99.89178356713427, 100.55310621242485, 101.21442885771543, 101.87575150300601, 102.5370741482966, 103.19839679358718, 103.85971943887776, 104.52104208416834, 105.18236472945891, 105.84368737474949, 106.50501002004007, 107.16633266533066, 107.82765531062124, 108.48897795591182, 109.1503006012024, 109.81162324649299, 110.47294589178357, 111.13426853707415, 111.79559118236473, 112.45691382765531, 113.1182364729459, 113.77955911823648, 114.44088176352706, 115.10220440881764, 115.76352705410822, 116.42484969939879, 117.08617234468937, 117.74749498997996, 118.40881763527054, 119.07014028056112, 119.7314629258517, 120.39278557114228, 121.05410821643287, 121.71543086172345, 122.37675350701403, 123.03807615230461, 123.6993987975952, 124.36072144288578, 125.02204408817636, 125.68336673346694, 126.34468937875752, 127.00601202404809, 127.66733466933867, 128.32865731462925, 128.98997995991982, 129.65130260521042, 130.31262525050101, 130.97394789579158, 131.63527054108215, 132.29659318637275, 132.9579158316633, 133.6192384769539, 134.28056112224448, 134.94188376753507, 135.60320641282564, 136.26452905811624, 136.9258517034068, 137.5871743486974, 138.24849699398797, 138.90981963927857, 139.57114228456913, 140.23246492985973, 140.8937875751503, 141.5551102204409, 142.21643286573146, 142.87775551102203, 143.53907815631263, 144.2004008016032, 144.8617234468938, 145.52304609218436, 146.18436873747495, 146.84569138276552, 147.50701402805612, 148.1683366733467, 148.82965931863728, 149.49098196392785, 150.15230460921845, 150.81362725450902, 151.4749498997996, 152.13627254509018, 152.79759519038078, 153.45891783567134, 154.1202404809619, 154.7815631262525, 155.44288577154308, 156.10420841683367, 156.76553106212424, 157.42685370741484, 158.0881763527054, 158.749498997996, 159.41082164328657, 160.07214428857716, 160.73346693386773, 161.39478957915833, 162.0561122244489, 162.7174348697395, 163.37875751503006, 164.04008016032063, 164.70140280561122, 165.3627254509018, 166.0240480961924, 166.68537074148296, 167.34669338677355, 168.00801603206412, 168.66933867735472, 169.33066132264528, 169.99198396793588, 170.65330661322645, 171.31462925851704, 171.9759519038076, 172.6372745490982, 173.29859719438878, 173.95991983967937, 174.62124248496994, 175.2825651302605, 175.9438877755511, 176.60521042084167, 177.26653306613227, 177.92785571142284, 178.58917835671343, 179.250501002004, 179.9118236472946, 180.57314629258516, 181.23446893787576, 181.89579158316633, 182.55711422845692, 183.2184368737475, 183.8797595190381, 184.54108216432866, 185.20240480961922, 185.86372745490982, 186.5250501002004, 187.18637274549098, 187.84769539078155, 188.50901803607215, 189.17034068136272, 189.8316633266533, 190.49298597194388, 191.15430861723448, 191.81563126252505, 192.47695390781564, 193.1382765531062, 193.7995991983968, 194.46092184368737, 195.12224448897797, 195.78356713426854, 196.4448897795591, 197.1062124248497, 197.76753507014027, 198.42885771543087, 199.09018036072143, 199.75150300601203, 200.4128256513026, 201.0741482965932, 201.73547094188376, 202.39679358717436, 203.05811623246493, 203.71943887775552, 204.3807615230461, 205.0420841683367, 205.70340681362725, 206.36472945891782, 207.02605210420842, 207.68737474949899, 208.34869739478958, 209.01002004008015, 209.67134268537075, 210.3326653306613, 210.9939879759519, 211.65531062124248, 212.31663326653307, 212.97795591182364, 213.63927855711424, 214.3006012024048, 214.9619238476954, 215.62324649298597, 216.28456913827657, 216.94589178356713, 217.6072144288577, 218.2685370741483, 218.92985971943887, 219.59118236472946, 220.25250501002003, 220.91382765531063, 221.5751503006012, 222.2364729458918, 222.89779559118236, 223.55911823647295, 224.22044088176352, 224.88176352705412, 225.5430861723447, 226.20440881763528, 226.86573146292585, 227.52705410821645, 228.18837675350701, 228.84969939879758, 229.51102204408818, 230.17234468937875, 230.83366733466934, 231.4949899799599, 232.1563126252505, 232.81763527054107, 233.47895791583167, 234.14028056112224, 234.80160320641284, 235.4629258517034, 236.124248496994, 236.78557114228457, 237.44689378757516, 238.10821643286573, 238.7695390781563, 239.4308617234469, 240.09218436873746, 240.75350701402806, 241.41482965931863, 242.07615230460922, 242.7374749498998, 243.3987975951904, 244.06012024048096, 244.72144288577155, 245.38276553106212, 246.04408817635272, 246.70541082164328, 247.36673346693388, 248.02805611222445, 248.68937875751504, 249.3507014028056, 250.01202404809618, 250.67334669338678, 251.33466933867734, 251.99599198396794, 252.6573146292585, 253.3186372745491, 253.97995991983967, 254.64128256513027, 255.30260521042084, 255.96392785571143, 256.62525050100203, 257.2865731462926, 257.94789579158316, 258.6092184368738, 259.2705410821643, 259.9318637274549, 260.5931863727455, 261.25450901803606, 261.9158316633266, 262.57715430861725, 263.2384769539078, 263.8997995991984, 264.56112224448896, 265.2224448897796, 265.88376753507015, 266.5450901803607, 267.2064128256513, 267.8677354709419, 268.5290581162325, 269.19038076152304, 269.8517034068136, 270.5130260521042, 271.1743486973948, 271.8356713426854, 272.49699398797594, 273.1583166332665, 273.81963927855713, 274.4809619238477, 275.14228456913827, 275.80360721442884, 276.46492985971946, 277.12625250501003, 277.7875751503006, 278.44889779559117, 279.1102204408818, 279.77154308617236, 280.4328657314629, 281.0941883767535, 281.75551102204406, 282.4168336673347, 283.07815631262525, 283.7394789579158, 284.4008016032064, 285.062124248497, 285.7234468937876, 286.38476953907815, 287.0460921843687, 287.70741482965934, 288.3687374749499, 289.0300601202405, 289.69138276553105, 290.35270541082167, 291.01402805611224, 291.6753507014028, 292.3366733466934, 292.99799599198394, 293.65931863727457, 294.32064128256513, 294.9819639278557, 295.64328657314627, 296.3046092184369, 296.96593186372746, 297.62725450901803, 298.2885771543086, 298.9498997995992, 299.6112224448898, 300.27254509018036, 300.9338677354709, 301.59519038076155, 302.2565130260521, 302.9178356713427, 303.57915831663325, 304.2404809619238, 304.90180360721445, 305.563126252505, 306.2244488977956, 306.88577154308615, 307.5470941883768, 308.20841683366734, 308.8697394789579, 309.5310621242485, 310.1923847695391, 310.85370741482967, 311.51503006012024, 312.1763527054108, 312.8376753507014, 313.498997995992, 314.16032064128257, 314.82164328657313, 315.4829659318637, 316.1442885771543, 316.8056112224449, 317.46693386773546, 318.12825651302603, 318.78957915831666, 319.4509018036072, 320.1122244488978, 320.77354709418836, 321.434869739479, 322.09619238476955, 322.7575150300601, 323.4188376753507, 324.08016032064126, 324.7414829659319, 325.40280561122245, 326.064128256513, 326.7254509018036, 327.3867735470942, 328.0480961923848, 328.70941883767534, 329.3707414829659, 330.03206412825654, 330.6933867735471, 331.3547094188377, 332.01603206412824, 332.67735470941886, 333.33867735470943, 334.0])
               .range(['#22c55eff', '#23c55dff', '#25c55cff', '#26c55cff', '#28c55bff', '#2ac55aff', '#2bc45aff', '#2dc459ff', '#2fc458ff', '#30c458ff', '#32c457ff', '#33c456ff', '#35c456ff', '#37c355ff', '#38c354ff', '#3ac353ff', '#3bc353ff', '#3dc352ff', '#3fc351ff', '#40c351ff', '#42c250ff', '#43c24fff', '#45c24fff', '#47c24eff', '#48c24dff', '#4ac24dff', '#4bc24cff', '#4dc14bff', '#4fc14aff', '#50c14aff', '#52c149ff', '#54c148ff', '#55c148ff', '#57c047ff', '#58c046ff', '#5ac046ff', '#5cc045ff', '#5dc044ff', '#5fc044ff', '#60c043ff', '#62bf42ff', '#64bf41ff', '#65bf41ff', '#67bf40ff', '#68bf3fff', '#6abf3fff', '#6cbf3eff', '#6dbe3dff', '#6fbe3dff', '#70be3cff', '#72be3bff', '#74be3bff', '#75be3aff', '#77be39ff', '#79bd38ff', '#7abd38ff', '#7cbd37ff', '#7dbd36ff', '#7fbd36ff', '#81bd35ff', '#82bd34ff', '#84bc34ff', '#85bc33ff', '#87bc32ff', '#89bc32ff', '#8abc31ff', '#8cbc30ff', '#8dbc2fff', '#8fbb2fff', '#91bb2eff', '#92bb2dff', '#94bb2dff', '#96bb2cff', '#97bb2bff', '#99bb2bff', '#9aba2aff', '#9cba29ff', '#9eba29ff', '#9fba28ff', '#a1ba27ff', '#a2ba27ff', '#a4ba26ff', '#a6b925ff', '#a7b924ff', '#a9b924ff', '#aab923ff', '#acb922ff', '#aeb922ff', '#afb921ff', '#b1b820ff', '#b2b820ff', '#b4b81fff', '#b6b81eff', '#b7b81eff', '#b9b81dff', '#bbb81cff', '#bcb71bff', '#beb71bff', '#bfb71aff', '#c1b719ff', '#c3b719ff', '#c4b718ff', '#c6b617ff', '#c7b617ff', '#c9b616ff', '#cbb615ff', '#ccb615ff', '#ceb614ff', '#cfb613ff', '#d1b512ff', '#d3b512ff', '#d4b511ff', '#d6b510ff', '#d8b510ff', '#d9b50fff', '#dbb50eff', '#dcb40eff', '#deb40dff', '#e0b40cff', '#e1b40cff', '#e3b40bff', '#e4b40aff', '#e6b409ff', '#e8b309ff', '#e9b308ff', '#eab308ff', '#ebb308ff', '#ebb208ff', '#ebb208ff', '#ebb108ff', '#ebb008ff', '#ebb008ff', '#ebaf08ff', '#ebaf08ff', '#ecae09ff', '#ecae09ff', '#ecad09ff', '#ecad09ff', '#ecac09ff', '#ecac09ff', '#ecab09ff', '#ecab09ff', '#ecaa09ff', '#edaa0aff', '#eda90aff', '#eda90aff', '#eda80aff', '#eda80aff', '#eda70aff', '#eda70aff', '#eda60aff', '#eea60aff', '#eea50bff', '#eea50bff', '#eea40bff', '#eea40bff', '#eea30bff', '#eea30bff', '#eea20bff', '#efa20bff', '#efa10cff', '#efa10cff', '#efa00cff', '#efa00cff', '#ef9f0cff', '#ef9e0cff', '#ef9e0cff', '#f09d0cff', '#f09d0cff', '#f09c0dff', '#f09c0dff', '#f09b0dff', '#f09b0dff', '#f09a0dff', '#f09a0dff', '#f0990dff', '#f1990dff', '#f1980dff', '#f1980eff', '#f1970eff', '#f1970eff', '#f1960eff', '#f1960eff', '#f1950eff', '#f2950eff', '#f2940eff', '#f2940eff', '#f2930fff', '#f2930fff', '#f2920fff', '#f2920fff', '#f2910fff', '#f3910fff', '#f3900fff', '#f3900fff', '#f38f0fff', '#f38f10ff', '#f38e10ff', '#f38d10ff', '#f38d10ff', '#f48c10ff', '#f48c10ff', '#f48b10ff', '#f48b10ff', '#f48a10ff', '#f48a11ff', '#f48911ff', '#f48911ff', '#f48811ff', '#f58811ff', '#f58711ff', '#f58711ff', '#f58611ff', '#f58611ff', '#f58512ff', '#f58512ff', '#f58412ff', '#f68412ff', '#f68312ff', '#f68312ff', '#f68212ff', '#f68212ff', '#f68112ff', '#f68113ff', '#f68013ff', '#f78013ff', '#f77f13ff', '#f77f13ff', '#f77e13ff', '#f77e13ff', '#f77d13ff', '#f77c14ff', '#f77c14ff', '#f77b14ff', '#f87b14ff', '#f87a14ff', '#f87a14ff', '#f87914ff', '#f87914ff', '#f87814ff', '#f87815ff', '#f87715ff', '#f97715ff', '#f97615ff', '#f97615ff', '#f97515ff', '#f97515ff', '#f97415ff', '#f97415ff', '#f97316ff', '#f97316ff', '#f97216ff', '#f97217ff', '#f97217ff', '#f97117ff', '#f97118ff', '#f97018ff', '#f97018ff', '#f97019ff', '#f96f19ff', '#f96f19ff', '#f96f1aff', '#f86e1aff', '#f86e1bff', '#f86d1bff', '#f86d1bff', '#f86d1cff', '#f86c1cff', '#f86c1cff', '#f86c1dff', '#f86b1dff', '#f86b1eff', '#f86a1eff', '#f86a1eff', '#f86a1fff', '#f7691fff', '#f7691fff', '#f76920ff', '#f76820ff', '#f76821ff', '#f76721ff', '#f76721ff', '#f76722ff', '#f76622ff', '#f76622ff', '#f76623ff', '#f76523ff', '#f66523ff', '#f66424ff', '#f66424ff', '#f66425ff', '#f66325ff', '#f66325ff', '#f66226ff', '#f66226ff', '#f66226ff', '#f66127ff', '#f66127ff', '#f66128ff', '#f56028ff', '#f56028ff', '#f55f29ff', '#f55f29ff', '#f55f29ff', '#f55e2aff', '#f55e2aff', '#f55e2bff', '#f55d2bff', '#f55d2bff', '#f55c2cff', '#f55c2cff', '#f55c2cff', '#f45b2dff', '#f45b2dff', '#f45b2dff', '#f45a2eff', '#f45a2eff', '#f4592fff', '#f4592fff', '#f4592fff', '#f45830ff', '#f45830ff', '#f45830ff', '#f45731ff', '#f35731ff', '#f35632ff', '#f35632ff', '#f35632ff', '#f35533ff', '#f35533ff', '#f35533ff', '#f35434ff', '#f35434ff', '#f35334ff', '#f35335ff', '#f35335ff', '#f35236ff', '#f25236ff', '#f25136ff', '#f25137ff', '#f25137ff', '#f25037ff', '#f25038ff', '#f25038ff', '#f24f39ff', '#f24f39ff', '#f24e39ff', '#f24e3aff', '#f24e3aff', '#f14d3aff', '#f14d3bff', '#f14d3bff', '#f14c3cff', '#f14c3cff', '#f14b3cff', '#f14b3dff', '#f14b3dff', '#f14a3dff', '#f14a3eff', '#f14a3eff', '#f1493eff', '#f1493fff', '#f0483fff', '#f04840ff', '#f04840ff', '#f04740ff', '#f04741ff', '#f04741ff', '#f04641ff', '#f04642ff', '#f04542ff', '#f04543ff', '#f04543ff', '#f04443ff', '#ef4444ff', '#ef4445ff', '#ee4346ff', '#ed4347ff', '#ec4348ff', '#eb4249ff', '#ea424aff', '#e9424bff', '#e8424cff', '#e7414dff', '#e7414fff', '#e64150ff', '#e54151ff', '#e44052ff', '#e34053ff', '#e24054ff', '#e13f55ff', '#e03f56ff', '#df3f57ff', '#de3f59ff', '#dd3e5aff', '#dd3e5bff', '#dc3e5cff', '#db3e5dff', '#da3d5eff', '#d93d5fff', '#d83d60ff', '#d73c61ff', '#d63c63ff', '#d53c64ff', '#d43c65ff', '#d33b66ff', '#d33b67ff', '#d23b68ff', '#d13b69ff', '#d03a6aff', '#cf3a6bff', '#ce3a6dff', '#cd396eff', '#cc396fff', '#cb3970ff', '#ca3971ff', '#c93872ff', '#c93873ff', '#c83874ff', '#c73875ff', '#c63777ff', '#c53778ff', '#c43779ff', '#c3367aff', '#c2367bff', '#c1367cff', '#c0367dff', '#bf357eff', '#bf357fff', '#be3581ff', '#bd3582ff', '#bc3483ff', '#bb3484ff', '#ba3485ff', '#b93386ff', '#b83387ff', '#b73388ff', '#b63389ff', '#b5328bff', '#b5328cff', '#b4328dff', '#b3328eff', '#b2318fff', '#b13190ff', '#b03191ff', '#af3092ff', '#ae3093ff', '#ad3095ff', '#ac3096ff', '#ab2f97ff', '#ab2f98ff', '#aa2f99ff', '#a92e9aff', '#a82e9bff', '#a72e9cff', '#a62e9dff', '#a52d9fff', '#a42da0ff', '#a32da1ff', '#a22da2ff', '#a12ca3ff', '#a12ca4ff', '#a02ca5ff', '#9f2ba6ff', '#9e2ba7ff', '#9d2ba9ff', '#9c2baaff', '#9b2aabff', '#9a2aacff', '#992aadff', '#982aaeff', '#9729afff', '#9729b0ff', '#9629b1ff', '#9528b3ff', '#9428b4ff', '#9328b5ff', '#9228b6ff', '#9127b7ff', '#9027b8ff', '#8f27b9ff', '#8e27baff', '#8d26bbff', '#8d26bdff', '#8c26beff', '#8b25bfff', '#8a25c0ff', '#8925c1ff', '#8825c2ff', '#8724c3ff', '#8624c4ff', '#8524c5ff', '#8424c7ff', '#8323c8ff', '#8323c9ff', '#8223caff', '#8122cbff', '#8022ccff', '#7f22cdff', '#7e22ceff']);
     
 
-    color_map_8d9a12617048ffbc14a611d17253e30b.x = d3.scale.linear()
-              .domain([8.0, 367.0])
+    color_map_063043ef9e6b77953565995b9ecf5bde.x = d3.scale.linear()
+              .domain([4.0, 334.0])
               .range([0, 450 - 50]);
 
-    color_map_8d9a12617048ffbc14a611d17253e30b.legend = L.control({position: 'topright'});
-    color_map_8d9a12617048ffbc14a611d17253e30b.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
-    color_map_8d9a12617048ffbc14a611d17253e30b.legend.addTo(figure_31ded19ad324439c7719337ecf3e2ad5);
+    color_map_063043ef9e6b77953565995b9ecf5bde.legend = L.control({position: 'topright'});
+    color_map_063043ef9e6b77953565995b9ecf5bde.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_063043ef9e6b77953565995b9ecf5bde.legend.addTo(figure_e47c9e876e52ee53ea9fa53afc2d3aaf);
 
-    color_map_8d9a12617048ffbc14a611d17253e30b.xAxis = d3.svg.axis()
-        .scale(color_map_8d9a12617048ffbc14a611d17253e30b.x)
+    color_map_063043ef9e6b77953565995b9ecf5bde.xAxis = d3.svg.axis()
+        .scale(color_map_063043ef9e6b77953565995b9ecf5bde.x)
         .orient("top")
         .tickSize(1)
-        .tickValues([8.0, 97.75, 187.5, 277.25, 367.0]);
+        .tickValues([4.0, 86.5, 169.0, 251.5, 334.0]);
 
-    color_map_8d9a12617048ffbc14a611d17253e30b.svg = d3.select(".legend.leaflet-control").append("svg")
+    color_map_063043ef9e6b77953565995b9ecf5bde.svg = d3.select(".legend.leaflet-control").append("svg")
         .attr("id", 'legend')
         .attr("width", 450)
         .attr("height", 40);
 
-    color_map_8d9a12617048ffbc14a611d17253e30b.g = color_map_8d9a12617048ffbc14a611d17253e30b.svg.append("g")
+    color_map_063043ef9e6b77953565995b9ecf5bde.g = color_map_063043ef9e6b77953565995b9ecf5bde.svg.append("g")
         .attr("class", "key")
         .attr("fill", "black")
         .attr("transform", "translate(25,16)");
 
-    color_map_8d9a12617048ffbc14a611d17253e30b.g.selectAll("rect")
-        .data(color_map_8d9a12617048ffbc14a611d17253e30b.color.range().map(function(d, i) {
+    color_map_063043ef9e6b77953565995b9ecf5bde.g.selectAll("rect")
+        .data(color_map_063043ef9e6b77953565995b9ecf5bde.color.range().map(function(d, i) {
           return {
-            x0: i ? color_map_8d9a12617048ffbc14a611d17253e30b.x(color_map_8d9a12617048ffbc14a611d17253e30b.color.domain()[i - 1]) : color_map_8d9a12617048ffbc14a611d17253e30b.x.range()[0],
-            x1: i < color_map_8d9a12617048ffbc14a611d17253e30b.color.domain().length ? color_map_8d9a12617048ffbc14a611d17253e30b.x(color_map_8d9a12617048ffbc14a611d17253e30b.color.domain()[i]) : color_map_8d9a12617048ffbc14a611d17253e30b.x.range()[1],
+            x0: i ? color_map_063043ef9e6b77953565995b9ecf5bde.x(color_map_063043ef9e6b77953565995b9ecf5bde.color.domain()[i - 1]) : color_map_063043ef9e6b77953565995b9ecf5bde.x.range()[0],
+            x1: i < color_map_063043ef9e6b77953565995b9ecf5bde.color.domain().length ? color_map_063043ef9e6b77953565995b9ecf5bde.x(color_map_063043ef9e6b77953565995b9ecf5bde.color.domain()[i]) : color_map_063043ef9e6b77953565995b9ecf5bde.x.range()[1],
             z: d
           };
         }))
@@ -864,7 +1011,7 @@
         .attr("width", function(d) { return d.x1 - d.x0; })
         .style("fill", function(d) { return d.z; });
 
-    color_map_8d9a12617048ffbc14a611d17253e30b.g.call(color_map_8d9a12617048ffbc14a611d17253e30b.xAxis).append("text")
+    color_map_063043ef9e6b77953565995b9ecf5bde.g.call(color_map_063043ef9e6b77953565995b9ecf5bde.xAxis).append("text")
         .attr("class", "caption")
         .attr("y", 21)
         .attr("fill", "black")
